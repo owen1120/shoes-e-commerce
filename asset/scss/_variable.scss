@@ -1,21 +1,51 @@
 // typography
-$font-family: "Noto Sans TC", sans-serif;
+$font-family: "Noto Sans TC", Horizontal, sans-serif;
 
-// color
 :root {
-    --text-primary: #0027d5;
-    --text-secondary: #4b4b4b;
-    --text-neutral: #000000;
-    --bg-primary: #fbfbfb;
-    --bg-secondary: #0027d5;
-    --bg-neutral: #ffffff;
-    --neutral-color: #ffffff;
-    --border-color: #6c757d;
-    --border-secondary: #0027d5;
-    --border-neutral: #000000;
-    --link-color: #000000;
-    --shadow-color: #000000;
-    --highlight-color: #db1f1f;
-    --grid-line-color: #d9d9d9;
-    --grid-bg-color: rgba(245, 235, 221, 1);
+    // color
+    --primary-100: #f5fee7;
+    --primary-200: #e8fec5;
+    --primary-300: #C0FA73;
+    --primary-400: #57A203;
+    --primary-500: #477A11;
+    --neutral-0: #ffffff;
+    --neutral-100: #F8F9FA;
+    --neutral-200: #E9ECEF;
+    --neutral-300: #DEE2E6;
+    --neutral-400: #CED4DA;
+    --neutral-500: #ADB5BD;
+    --neutral-600: #6C757D;
+    --neutral-700: #495057;
+    --neutral-800: #343A40;
+    --neutral-900: #212529;
+    --danger-100: #FCF1F1;
+    --danger-200: #EBA7A7;
+    --danger-300: #E9ECEF;
+    --warning-100: #FEF6EC;
+    --warning-200: #F9C588;
+    --warning-300: #F38B12;
+    --success-100: #EFF8F4;
+    --success-200: #9AD1BA;
+    --success-300: #36A375;
+    --info-100: #EEF5FC;
+    --info-200: #97C3ED;
+    --info-300: #3087DB;
+    --text-primary: #212529;
+    --text-secondary: #6C757D;
+    --text-muted: #ADB5BD;
+    --text-highlight: #57A203;
+    --text-dark: #ffffff;
+
+    // spacing
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-s: 12px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 40px;
+    --spacing-3xl: 48px;
+    --spacing-4xl: 56px;
+    --spacing-5xl: 64px;
+    --spacing-6xl: 80px;
 }
