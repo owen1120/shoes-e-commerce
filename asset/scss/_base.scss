@@ -4,6 +4,53 @@
     font-family: $font-family;
 }
 
+.container{
+    max-width: 1296px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 24px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.col-12-xxl{
+    width: 100%;
+}
+.col-11-xxl{
+    width: 91.66666666666667%;
+}
+.col-10-xxl{
+    width: 83.33333333333333%;
+}
+.col-9-xxl{
+    width: 75%;
+}
+.col-8-xxl{
+    width: 66.66666666666667%;
+}
+.col-7-xxl{
+    width: 58.33333333333333%;
+}
+.col-6-xxl{
+    width: 50%;
+}
+.col-5-xxl{
+    width: 41.66666666666667%;
+}
+.col-4-xxl{
+    width: 33.33333333333333%;
+}
+.col-3-xxl{
+    width: 25%;
+}
+.col-2-xxl{
+    width: 16.66666666666667%;
+}
+.col-1-xxl{
+    width: 8.333333333333333%;
+}
+
 // typography
 h1, h2, h3, h4, h5, h6, .display-1, .display-2 {
     font-family: $font-family;
