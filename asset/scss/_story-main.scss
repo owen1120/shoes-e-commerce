@@ -140,6 +140,12 @@
                         font-weight: 500;
                         padding-bottom: var(--spacing-xxs);
                         border-bottom: 1px solid var(--primary-400);
+                        &:hover{
+                            border-bottom: 1px solid var(--warning-300);
+                        }
+                    }
+                    &:hover{
+                        color: var(--warning-300);
                     }
                 }
             }

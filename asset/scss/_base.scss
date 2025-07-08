@@ -51,6 +51,10 @@
     width: 8.333333333333333%;
 }
 
+img{
+    display: block;
+}
+
 // typography
 h1, h2, h3, h4, h5, h6, .display-1, .display-2 {
     font-family: $font-family;
@@ -60,7 +64,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2 {
 p, li, a {
     font-family: $font-family;
     line-height: 1.5;
-    letter-spacing: 5%;
+    letter-spacing: 0.05em;
 }
 a {
     display: block;
@@ -68,22 +72,22 @@ a {
     outline: none;
     font-family: $font-family;
 }
-h1{
+h1, .tw-h1{
     font-size: 40px;
 }
-h2{
+h2, .tw-h2{
     font-size: 32px;
 }
-h3{
+h3, .tw-h3{
     font-size: 28px;
 }
-h4{
+h4, .tw-h4{
     font-size: 24px;
 }
-h5{
+h5, .tw-h5{
     font-size: 20px;
 }
-h6{
+h6, .tw-h6{
     font-size: 16px;
 }
 .display-1{
