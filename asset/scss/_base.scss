@@ -131,3 +131,41 @@ h6, .tw-h6{
 .radius-rounded{
     border-radius: 1000px;
 }
+
+// component
+
+// button
+.primary-l-btn{
+    min-height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-300);
+    font-size: 16px;
+    color: var(--neutral-900);
+    border: none;
+    border-radius: 2px;
+    padding: var(--spacing-s) var(--spacing-l);
+    cursor: pointer;
+    transition: all 0.2s;
+    .icon{
+        font-size: 20px;
+        &.left{
+            margin-right: var(--spacing-xs);
+        }
+        &.right{
+            margin-left: var(--spacing-xs);
+        }
+    }
+    &:hover{
+        color: var(--primary-500);
+    }
+    &:focus{
+        color: var(--primary-500);
+        box-shadow: 0 0 0 3px rgba($color: var(--primary-300), $alpha: 0.4);
+    }
+    &:disabled, &.disable{
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
+}
