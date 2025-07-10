@@ -1,3 +1,25 @@
+.header{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav{
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-3xl);
+            .navbar{
+                display: flex;
+                align-items: center;
+                gap: var(--spacing-2xl);
+            }
+        }
+        .icon-btn-l i{
+            font-size: 24px;
+            text-align: center;
+            line-height: 1;
+        }
+    }
+}
 .story-header{
     .title-group{
         position: absolute;
