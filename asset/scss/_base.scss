@@ -96,16 +96,16 @@ h6, .tw-h6{
 .display-2{
     font-size: 48px;
 }
-.tw-lable-lg{
+.tw-label-lg{
     font-size: 20px;
 }
-.tw-lable-md{
+.tw-label-md{
     font-size: 16px;
 }
-.tw-lable-sm{
+.tw-label-sm{
     font-size: 14px;
 }
-.tw-lable-xs{
+.tw-label-xs{
     font-size: 12px;
 }
 .tw-para-lg{
@@ -541,8 +541,6 @@ h6, .tw-h6{
 }
 
 // option
-
-// text only
 .option-text{
     display: inline-flex;
     justify-content: center;
@@ -574,14 +572,23 @@ h6, .tw-h6{
     color: var(--neutral-600);
     cursor: pointer;
     transition: all 600ms;
-    &:hover{
+    .imgs{
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
         img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    &:hover{
+        .imgs{
             opacity: 0.8;
         }
     }
     &:focus{
         color: var(--neutral-900);
-        img{
+        .imgs{
             border: 1px solid var(--neutral-900);
         }
     }
@@ -602,8 +609,13 @@ h6, .tw-h6{
     .imgs{
         aspect-ratio: 1 / 1;
         overflow: hidden;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
-    .lable{
+    .label{
         display: flex;
         flex-direction: column;
         gap: var(--spacing-xxs);
@@ -627,8 +639,13 @@ h6, .tw-h6{
     .imgs{
         aspect-ratio: 1 / 1;
         overflow: hidden;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
-    .lable{
+    .label{
         display: flex;
         flex-direction: column;
         gap: var(--spacing-xxs);
@@ -651,8 +668,13 @@ h6, .tw-h6{
     .imgs{
         aspect-ratio: 1 / 1;
         overflow: hidden;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
-    .lable{
+    .label{
         display: flex;
         flex-direction: column;
         color: var(--neutral-900);
@@ -668,3 +690,33 @@ h6, .tw-h6{
 }
 
 // card-img
+.card-img{
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background-color: var(--neutral-100);
+    overflow: hidden;
+    transition: all 600ms;
+    .badge{
+        position: absolute;
+        display: inline-block;
+        align-self: flex-start;
+        top: 0;
+        left: 0;
+        font-size: 14px;
+        color: var(--primary-400);
+        padding: var(--spacing-xs) var(--spacing-s);
+        background-color: var(--primary-100);
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &:hover{
+        img{
+            opacity: 0.7;
+        }
+    }
+}
+
+// card-category

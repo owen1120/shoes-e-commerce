@@ -17,7 +17,7 @@
                 font-weight: 700;
                 color: var(--primary-400);
             }
-            .lable{
+            .label{
                 display: flex;
                 flex-direction: column;
                 gap: var(--spacing-xxs);
@@ -55,7 +55,7 @@
                     font-weight: 700;
                     color: var(--primary-400);
                 }
-                .lable{
+                .label{
                     display: flex;
                     flex-direction: column;
                     gap: var(--spacing-m);
@@ -74,7 +74,7 @@
                 font-weight: 700;
                 color: var(--neutral-900);
             }
-            .lable{
+            .label{
                 display: flex;
                 flex-direction: column;
                 gap: var(--spacing-s);
@@ -102,7 +102,7 @@
             .title{
                 font-weight: 700;
             }
-            .lable{
+            .label{
                 display: flex;
                 flex-direction: column;
                 gap: var(--spacing-s);
@@ -123,7 +123,7 @@
                 font-weight: 700;
                 color: var(--neutral-900);
             }
-            .lable{
+            .label{
                 padding-bottom: var(--spacing-3xl);
                 border-bottom: 1px solid var(--neutral-300);
                 li .button{
