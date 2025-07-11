@@ -69,4 +69,51 @@
             }
         }
     }
+    .pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-s);
+        a i{
+            text-align: center;
+        }
+        .page-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spacing-xs);
+            .page-item{
+                .page-link{
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--neutral-900);
+                    transition: all 600ms;
+                    &:hover{
+                        background-color: var(--primary-200);
+                    }
+                    &:active, &.active{
+                        background-color: var(--primary-300);
+                    }
+                    &:disabled, &.disable{
+                        opacity: 0.4;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+    }
+}
+.banner-action{
+    padding-top: var(--spacing-3xl);
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-l);
+        background-color: var(--primary-200);
+        padding: var(--spacing-l);
+    }
 }
