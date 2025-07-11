@@ -1,0 +1,136 @@
+.product-info{
+    display: flex;
+    gap: var(--spacing-l);
+    padding: var(--spacing-5xl) 0;
+    .image{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-xs);
+        .imgs{
+            width: calc((100% - var(--spacing-xs)) / 2);
+            aspect-ratio: 1 / 1;
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xl);
+        .intro{
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-m);
+            .title .breadcrumb ol{
+                display: flex;
+                align-items: center;
+                li {
+                    display: flex;
+                    align-items: center;
+                    white-space: nowrap;
+                    & + li {
+                        &::before {
+                        content: "/"; 
+                        margin: 0 var(--spacing-s); 
+                        color: var(--neutral-300); 
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        color: var(--neutral-600);
+        
+                        &:hover {
+                        text-decoration: underline;
+                        }
+                    }
+                    &:last-child {
+                        color: var(--neutral-900);
+                        a {
+                            pointer-events: none; 
+                            cursor: default; 
+                            text-decoration: none; 
+                            color: var(--neutral-900); 
+                        }
+                    }
+                }
+            }
+            .price{
+                display: flex;
+                align-items: center;
+                gap: var(--spacing-xs);
+                p{
+                    color: var(--primary-400);
+                    &:last-child{
+                        font-weight: 400;
+                        text-decoration: line-through;
+                        color: var(--neutral-500);
+                    }
+                }
+            }
+            .para{
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-s);
+                font-weight: 400;
+                color: var(--neutral-900);
+            }
+        }
+        .spec{
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-3xl);
+            .cmf{
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-xl);
+                .color{
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--spacing-xs);
+                    font-weight: 400;
+                    color: var(--neutral-900);
+                    .btns{
+                        display: flex;
+                        align-items: center;
+                        gap: var(--spacing-xs);
+                        a{
+                            width: 64px;
+                        }
+                    }
+                }
+            }
+            .size{
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-xs);
+                font-weight: 400;
+                color: var(--neutral-900);
+                .size-btn{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: var(--spacing-xs);
+                    .size-item a{
+                        width: 160px;
+                    }
+                }
+                p:last-child{
+                    color: var(--danger-300);
+                }
+            }
+        }
+    }
+}
+.banner-action{
+    padding-top: var(--spacing-3xl);
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-l);
+        background-color: var(--primary-200);
+        padding: var(--spacing-l);
+    }
+}
