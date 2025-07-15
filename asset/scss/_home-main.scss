@@ -1,9 +1,19 @@
+.hero{
+    .imgs{
+        overflow: hidden;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
 .arrival{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xl);
     padding: var(--spacing-5xl) 0;
-    .title{
+    .top-title{
         display: flex;
         flex-direction: column;
         gap: var(--spacing-s);
@@ -14,7 +24,7 @@
         flex-wrap: wrap;
         gap: var(--spacing-2xl) var(--spacing-l);
         .product-item{
-            width: calc((100% - var(--spacing-l)) / 2);
+            width: calc((100% - var(--spacing-l)) / 2); 
         }
     }
 }
