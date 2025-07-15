@@ -737,3 +737,16 @@ h6, .tw-h6{
 }
 
 // card-category
+
+
+.banner-action{
+    padding-top: var(--spacing-3xl);
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-l);
+        background-color: var(--primary-200);
+        padding: var(--spacing-l);
+    }
+}
