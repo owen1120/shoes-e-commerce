@@ -1,0 +1,126 @@
+// card
+
+// card-product
+.card-product-l{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+    transition: all 600ms;
+    .imgs{
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .label{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xxs);
+        color: var(--neutral-900);
+        .title{
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    &:hover{
+        .imgs{
+            opacity: 0.8;
+        }
+    }
+}
+.card-product-m{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+    transition: all 600ms;
+    .imgs{
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .label{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xxs);
+        color: var(--neutral-900);
+        .title{
+            font-weight: 700;
+        }
+    }
+    &:hover{
+        .imgs{
+            opacity: 0.8;
+        }
+    }
+}
+.card-product-s{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    transition: all 600ms;
+    .imgs{
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .label{
+        display: flex;
+        flex-direction: column;
+        color: var(--neutral-900);
+        .title{
+            font-weight: 700;
+        }
+    }
+    &:hover{
+        .imgs{
+            opacity: 0.8;
+        }
+    }
+}
+
+// card-img
+.card-img{
+    width: 100%;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background-color: var(--neutral-100);
+    overflow: hidden;
+    transition: all 600ms;
+    .badge{
+        position: absolute;
+        display: inline-block;
+        align-self: flex-start;
+        top: 0;
+        left: 0;
+        font-size: 14px;
+        color: var(--primary-400);
+        padding: var(--spacing-xs) var(--spacing-s);
+        background-color: var(--primary-100);
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &:hover{
+        img{
+            opacity: 0.7;
+        }
+    }
+}
+
+// card-category

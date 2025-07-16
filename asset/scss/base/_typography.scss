@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6, .tw-h1, .tw-h2, .tw-h3, .tw-h4, .tw-h5, .tw-h6, .display-1, .display-2 {
+    font-family: $font-family;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+}
+p, li, a {
+    font-family: $font-family;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    font-family: $font-family;
+}
+h1, .tw-h1{
+    font-size: 40px;
+}
+h2, .tw-h2{
+    font-size: 32px;
+}
+h3, .tw-h3{
+    font-size: 28px;
+}
+h4, .tw-h4{
+    font-size: 24px;
+}
+h5, .tw-h5{
+    font-size: 20px;
+}
+h6, .tw-h6{
+    font-size: 16px;
+}
+.display-1{
+    font-size: 64px;
+}
+.display-2{
+    font-size: 48px;
+}
+.tw-label-lg{
+    font-size: 20px;
+}
+.tw-label-md{
+    font-size: 16px;
+}
+.tw-label-sm{
+    font-size: 14px;
+}
+.tw-label-xs{
+    font-size: 12px;
+}
+.tw-para-lg{
+    font-size: 20px;
+}
+.tw-para-md{
+    font-size: 16px;
+}
+.tw-para-sm{
+    font-size: 14px;
+}
+.tw-para-xs{
+    font-size: 12px;
+}
