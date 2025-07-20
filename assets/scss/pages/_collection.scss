@@ -52,7 +52,7 @@
                     &:hover{
                         color: var(--primary-400);
                     }
-                    &:active{
+                    &:active, &.active{
                         color: var(--primary-400);
                     }
                 }

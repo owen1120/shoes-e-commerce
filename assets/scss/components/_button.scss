@@ -28,6 +28,7 @@
         box-shadow: 0 0 0 3px rgba($color: var(--primary-300), $alpha: 0.4);
     }
     &:disabled, &.disable{
+        color: var(--neutral-900);
         opacity: 0.4;
         cursor: not-allowed;
     }
@@ -62,6 +63,7 @@
         box-shadow: 0 0 0 3px rgba($color: var(--primary-300), $alpha: 0.4);
     }
     &:disabled, &.disable{
+        color: var(--neutral-900);
         opacity: 0.4;
         cursor: not-allowed;
     }
@@ -96,6 +98,7 @@
         box-shadow: 0 0 0 3px rgba($color: var(--neutral-900), $alpha: 0.1);
     }
     &:disabled, &.disable{
+        background: var(--neutral-900);
         opacity: 0.4;
         cursor: not-allowed;
     }
@@ -130,6 +133,7 @@
         box-shadow: 0 0 0 3px rgba($color: var(--neutral-900), $alpha: 0.1);
     }
     &:disabled, &.disable{
+        background: var(--neutral-900);
         opacity: 0.4;
         cursor: not-allowed;
     }
@@ -166,6 +170,8 @@
         box-shadow: 0 0 0 3px rgba($color: var(--neutral-900), $alpha: 0.1);
     }
     &:disabled, &.disable{
+        color: var(--neutral-900);
+        background: none;
         opacity: 0.4;
         cursor: not-allowed;
     }
@@ -202,6 +208,8 @@
         box-shadow: 0 0 0 3px rgba($color: var(--neutral-900), $alpha: 0.1);
     }
     &:disabled, &.disable{
+        color: var(--neutral-900);
+        background: none;
         opacity: 0.4;
         cursor: not-allowed;
     }
@@ -225,6 +233,7 @@
         background-color: var(--primary-100);
     }
     &:disabled, &.disable{
+        color: var(--neutral-900);
         opacity: 0.4;
         cursor: not-allowed;
     }
@@ -264,6 +273,9 @@
         background-color: var(--primary-100);
     }
     &:disabled, &.disable{
+        color: var(--neutral-900);
+        border: 2px solid var(--neutral-200);
+        background-color: var(--neutral-0);
         opacity: 0.4;
         cursor: not-allowed;
     }
@@ -287,6 +299,7 @@
         background-color: var(--primary-100);
     }
     &:disabled, &.disable{
+        color: var(--neutral-900);
         opacity: 0.4;
         cursor: not-allowed;
     }
@@ -326,6 +339,9 @@
         background-color: var(--primary-100);
     }
     &:disabled, &.disable{
+        color: var(--neutral-900);
+        border: 2px solid var(--neutral-200);
+        background-color: var(--neutral-0);
         opacity: 0.4;
         cursor: not-allowed;
     }

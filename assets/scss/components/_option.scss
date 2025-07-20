@@ -16,6 +16,7 @@
         border: 1px solid var(--neutral-900);
     }
     &:disabled, &.disable{
+        border: 1px solid var(--neutral-300);
         opacity: 0.4;
         cursor: not-allowed;
     }
@@ -52,5 +53,8 @@
     &:disabled, &.disable{
         opacity: 0.4;
         cursor: not-allowed;
+        .imgs{
+            opacity: 1;
+        }
     }
 }
