@@ -346,3 +346,34 @@
         cursor: not-allowed;
     }
 }
+.third-party-login{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    button{
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-s);
+        background: var(--neutral-0);
+        border: 1px solid var(--neutral-300);
+        border-radius: 4px;
+        padding: var(--spacing-s);
+        cursor: pointer;
+        transition: all 600ms;
+        .imgs{
+            width: 40px;
+            height: 40px;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        &:hover, &:focus, &.focus{
+            background: var(--neutral-200);
+            border: 1px solid var(--neutral-600);
+        }
+    }
+}

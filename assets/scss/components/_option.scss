@@ -58,3 +58,23 @@
         }
     }
 }
+.tablist-neutral-2{
+    display: flex;
+    .tablist-item{
+        width: 50%;
+        .tablist-link{
+            color: var(--neutral-600);
+            font-weight: 700;
+            padding: var(--spacing-s) var(--spacing-m);
+            border-bottom: 2px solid var(--neutral-300);
+            transition: all 600ms;
+            &:hover, &:focus, &.focus{
+                color: var(--neutral-900);
+            }
+            &:active, &.active{
+                color: var(--neutral-900);
+                border-bottom: 2px solid var(--neutral-900);
+            }
+        }
+    }
+}
