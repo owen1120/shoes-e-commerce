@@ -58,6 +58,9 @@ $font-family: "Noto Sans TC", Horizontal, sans-serif;
 body{
     color: var(--neutral-900);
 }
+img{
+    display: block;
+}
 .container{
     max-width: 1296px;
     display: grid;
@@ -105,8 +108,12 @@ body{
     grid-column: span 1;
 }
 
-img{
-    display: block;
+@media (max-width: 376px) {
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 16px;
+        margin: 0 auto;
+    }
 }
 
 // radius

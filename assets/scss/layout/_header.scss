@@ -20,4 +20,35 @@
             line-height: 1;
         }
     }
+    .mobile-navbar{
+        display: none;
+    }
+}
+@media (max-width: 376px) {
+    .header{
+        .container{
+            padding: var(--spacing-s);
+            .nav{
+                .navbar{
+                    display: none;
+                }
+            }
+        }
+        .mobile-navbar{
+            display: flex;
+            li{
+                width: 50%;
+                a{
+                    width: 100%;
+                    color: var(--neutral-900);
+                    text-align: center;
+                    background-color: var(--primary-100);
+                    padding: var(--spacing-s) var(--spacing-l);
+                    &:hover, &:focus, &.focus, &:active, &.active{
+                        background-color: var(--primary-200);
+                    }
+                }
+            }
+        }
+    }
 }

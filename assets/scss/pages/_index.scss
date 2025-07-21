@@ -8,6 +8,9 @@
                 object-fit: cover;
                 object-position: center;
             }
+            .mobile-img{
+                display: none;
+            }
         }
         .content{
             position: absolute;
@@ -139,6 +142,33 @@
             .large{
                 grid-row: span 2;
                 grid-column: span 2;
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .home-main{
+        .hero{
+            .imgs{
+                .desktop-img{
+                    display: none;
+                }
+                .mobile-img{
+                    display: block;
+                }
+            }
+            .content{
+                gap: var(--spacing-xl);
+                .title{
+                    gap: var(--spacing-xs);
+                    h1{
+                        font-size: 48px;
+                    }
+                    h2{
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }
