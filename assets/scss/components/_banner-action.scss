@@ -1,0 +1,22 @@
+.banner-action{
+    padding-top: var(--spacing-3xl);
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-l);
+        background-color: var(--primary-200);
+        padding: var(--spacing-l);
+    }
+}
+
+@media (max-width: 376px) {
+    .banner-action{
+        padding-top: var(--spacing-l);
+        .banner{
+            gap: var(--spacing-m);
+            padding: var(--spacing-l) var(--spacing-s);
+        }
+    }
+    
+}

@@ -63,3 +63,54 @@ h6, .tw-h6{
 .tw-para-xs{
     font-size: 12px;
 }
+
+@media (max-width: 376px) {
+    .tw-h1-s{
+        font-size: 40px;
+    }
+    .tw-h2-s{
+        font-size: 32px;
+    }
+    .tw-h3-s{
+        font-size: 28px;
+    }
+    .tw-h4-s{
+        font-size: 24px;
+    }
+    .tw-h5-s{
+        font-size: 20px;
+    }
+    .tw-h6-s{
+        font-size: 16px;
+    }
+    .display-1-s{
+        font-size: 64px;
+    }
+    .display-2-s{
+        font-size: 48px;
+    }
+    .tw-label-lg-s{
+        font-size: 20px;
+    }
+    .tw-label-md-s{
+        font-size: 16px;
+    }
+    .tw-label-sm-s{
+        font-size: 14px;
+    }
+    .tw-label-xs-s{
+        font-size: 12px;
+    }
+    .tw-para-lg-s{
+        font-size: 20px;
+    }
+    .tw-para-md-s{
+        font-size: 16px;
+    }
+    .tw-para-sm-s{
+        font-size: 14px;
+    }
+    .tw-para-xs-s{
+        font-size: 12px;
+    }
+}

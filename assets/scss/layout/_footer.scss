@@ -25,3 +25,24 @@
         }
     }
 }
+
+@media (max-width: 376px) {
+    .footer{
+        padding: var(--spacing-xl) var(--spacing-s);
+        .container{
+            gap: var(--spacing-l);
+            .footer-nav{
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: var(--spacing-xs);
+                .navbar{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: var(--spacing-xxs);
+                    padding: 0 var(--spacing-s);
+                }
+            }
+        }
+    }
+}
