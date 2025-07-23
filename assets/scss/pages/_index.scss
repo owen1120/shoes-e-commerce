@@ -207,6 +207,23 @@
                 .mobile-img{
                     display: block;
                 }
+                .background{
+                    height: 450px;
+                }
+                .star{
+                    position: absolute;
+                    top: 10%;
+                    left: 0;
+                    transform: translate(-50%, 0);
+                    width: 48px;
+                }
+                .sparkle{
+                    position: absolute;
+                    bottom: 20%;
+                    right: 0;
+                    transform: translate(40%, 0);
+                    width: 76px;
+                }
             }
             .content{
                 gap: var(--spacing-xl);

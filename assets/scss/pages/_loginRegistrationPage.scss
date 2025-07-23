@@ -5,25 +5,15 @@
         gap: var(--spacing-l);
         padding: var(--spacing-5xl) 0;
         .imgs{
-            position: relative;
             overflow: hidden;
             border-radius: 16px;
-            .label{
-                position: absolute;
-                top: 10%;
-                padding: 40px;
-                h1{
-                    color: var(--neutral-0);
-                }
-                h2{
-                    color: var(--neutral-500);
-                    text-align: end;
-                }
-            }
             img{
                 width: 100%;
                 object-fit: cover;
                 object-position: center;
+            }
+            .mobile-img{
+                display: none;
             }
         }
         .loginSide{
@@ -47,6 +37,38 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .lrp-main .container{
+        .logIn{
+            grid-template-columns: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            padding: 0;
+            .imgs{
+                border-radius: 0;
+                .desktop-img{
+                    display: none;
+                }
+                .mobile-img{
+                    display: block;
+                }
+            }
+            .loginSide{
+                border-radius: 0;
+                .label{
+                    position: relative;
+                    gap: var(--spacing-l);
+                    padding: var(--spacing-xl) var(--spacing-s);
+                }
+                .desktop-img{
+                    display: none;
+                }
             }
         }
     }

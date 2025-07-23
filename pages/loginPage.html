@@ -12,14 +12,11 @@
         <div class="container">
             <section class="logIn col-12-xxl">
                 <aside class="imgs col-5-xxl">
-                    <img src="../assets/images/banner-sm.png" alt="Pair of light grey and white casual sneakers with water splashing around them on a dark, wet surface">
-                    <div class="label">
-                        <h1 class="display-2">URBNSTEP</h1>
-                        <h2 class="tw-h4">Your Step, Your Statement</h2>
-                    </div>
+                    <img src="../assets/images/login.png" alt="Pair of light grey and white casual sneakers with water splashing around them on a dark, wet surface" class="desktop-img">
+                    <img src="../assets/images/login-sm.png" alt="Pair of light grey and white casual sneakers with water splashing around them on a dark, wet surface" class="mobile-img">
                 </aside>
                 <div class="loginSide col-7-xxl">
-                    <img src="../assets/images/login-bg.png" alt="login-bg">
+                    <img src="../assets/images/login-bg.png" alt="login-bg" class="desktop-img">
                     <div class="label">
                         <h3 class="tw-h3">歡迎！</h3>
                         <ul class="tablist-neutral-2">
@@ -30,7 +27,26 @@
                                 <a href="./registrationPage.html" class="tablist-link tw-h6">註冊</a>
                             </li>
                         </ul>
-                        <%- include('./layout/third-party-login'); -%>
+                        <div class="third-party-login">
+                            <button type="button" class="btn-facebook" onclick="window.location.href='/auth/facebook'">
+                                <div class="imgs">
+                                    <img src="../assets/images/facebook.svg" alt="Facebook">
+                                </div>
+                                <p class="tw-para-md">Facebook 登入</p>
+                            </button>
+                            <button type="button" class="btn-apple" onclick="window.location.href='/auth/apple'">
+                                <div class="imgs">
+                                    <img src="../assets/images/apple.svg" alt="Apple">
+                                </div>
+                                <p class="tw-para-md">Apple 登入</p>
+                            </button>
+                            <button type="button" class="btn-google" onclick="window.location.href='/auth/google'">
+                                <div class="imgs">
+                                    <img src="../assets/images/google.svg" alt="Google">
+                                </div>
+                                <p class="tw-para-md">Google 登入</p>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -132,6 +132,9 @@
                     a{
                         width: calc((100% - var(--spacing-xs)) / 2);
                     }
+                    .mobile-btn{
+                        display: none;
+                    }
                 }
             }
             .accordion li{
@@ -162,4 +165,80 @@
             }
         }
     }
+}
+
+@media (max-width: 376px) {
+    .pd-main .container{
+    .product-info{
+        flex-direction: column;
+        gap: var(--spacing-l);
+        padding: 0;
+        .image{
+            .imgs{
+                width: 100%;
+                display: none;
+                &:first-child{
+                    display: block;
+                }
+            }
+        }
+        .info{
+            padding: 0 var(--spacing-s);
+            .intro{
+                gap: var(--spacing-s);
+                .title{
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--spacing-xs);
+                    .breadcrumb ol{
+                        li {
+                            & + li {
+                                &::before {
+                                    margin: 0 var(--spacing-xs); 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .spec{
+                gap: var(--spacing-l);
+                .cmf{
+                    gap: var(--spacing-l);
+                }
+                .btns{
+                    .neutral-fill-l-btn{
+                        height: 48px;
+                        flex-grow: 1;
+                        white-space: nowrap;
+                    }
+                    .desktop-btn{
+                        display: none;
+                    }
+                    .mobile-btn{
+                        width: 48px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        aspect-ratio: 1 / 1;
+                    }
+                }
+            }
+        }
+    }
+    .seller{
+        padding: var(--spacing-2xl) var(--spacing-s);
+        .cards{
+            gap: var(--spacing-m);
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow: hidden;
+            .card {
+                width: 300px;
+                flex-shrink: 0;
+            }
+        }
+    }
+}
 }
