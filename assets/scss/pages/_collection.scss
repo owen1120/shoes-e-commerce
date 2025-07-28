@@ -1,5 +1,7 @@
 .pl-main{
     .container{
+        display: flex;
+        flex-direction: column;
         .product-lists{
             display: flex;
             flex-direction: column;
@@ -41,26 +43,30 @@
             .content{
                 display: flex;
                 gap: var(--spacing-l);
-                .menu .menu-list{
-                    display: flex;
-                    flex-direction: column;
-                    gap: var(--spacing-m);
-                    li{
-                        min-height: 48px;
-                        a{
-                            color: var(--neutral-900);
-                            padding: var(--spacing-xs) 0;
-                            transition: all 600ms;
-                            &:hover{
-                                color: var(--primary-400);
-                            }
-                            &:active, &.active{
-                                color: var(--primary-400);
+                .menu{
+                    width: 16.66666666666667%;
+                    .menu-list{
+                        display: flex;
+                        flex-direction: column;
+                        gap: var(--spacing-m);
+                        li{
+                            min-height: 48px;
+                            a{
+                                color: var(--neutral-900);
+                                padding: var(--spacing-xs) 0;
+                                transition: all 600ms;
+                                &:hover{
+                                    color: var(--primary-400);
+                                }
+                                &:active, &.active{
+                                    color: var(--primary-400);
+                                }
                             }
                         }
                     }
                 }
                 .cards{
+                    width: 83.33333333333333%;
                     .card-list{
                         display: flex;
                         flex-wrap: wrap;
@@ -115,7 +121,7 @@
 }
 
 
-@media (max-width:376px) {
+@media (max-width:576px) {
     .pl-main .container{
         .product-lists{
             gap: var(--spacing-s);
@@ -135,6 +141,7 @@
                     display: none;
                 }
                 .cards{
+                    width: 100%;
                     .card-list{
                         gap: var(--spacing-s);
                         .card-item{
