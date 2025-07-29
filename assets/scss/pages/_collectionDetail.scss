@@ -1,9 +1,13 @@
 .pd-main .container{
+    display: flex;
+    flex-direction: column;
     .product-info{
         display: flex;
+        align-items: flex-start;
         gap: var(--spacing-l);
         padding: var(--spacing-5xl) 0;
         .image{
+            width: 58.33333333333333%;
             display: flex;
             flex-wrap: wrap;
             gap: var(--spacing-xs);
@@ -18,6 +22,7 @@
             }
         }
         .info{
+            width: 41.66666666666667%;
             display: flex;
             flex-direction: column;
             gap: var(--spacing-xl);
@@ -160,20 +165,24 @@
         .cards{
             display: flex;
             gap: var(--spacing-l);
-            .card a{
-                color: var(--neutral-900);
-            }
+            .card{
+                width: 25%;
+                a{
+                    color: var(--neutral-900);
+                }
+            } 
         }
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 576px) {
     .pd-main .container{
     .product-info{
         flex-direction: column;
         gap: var(--spacing-l);
         padding: 0;
         .image{
+            width: 100%;
             .imgs{
                 width: 100%;
                 display: none;
@@ -183,6 +192,7 @@
             }
         }
         .info{
+            width: 100%;
             padding: 0 var(--spacing-s);
             .intro{
                 gap: var(--spacing-s);

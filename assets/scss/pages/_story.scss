@@ -45,6 +45,7 @@
         padding: var(--spacing-5xl) 0;
         .quote{
             max-width: 1000px;
+            width: 66.66666666666667%;
             display: flex;
             flex-direction: column;
             gap: var(--spacing-s);
@@ -64,6 +65,7 @@
             }
         }
         .intro{
+            width: 83.33333333333333%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -106,6 +108,7 @@
         }
         .history{
             max-width: 1000px;
+            width: 66.66666666666667%;
             display: flex;
             flex-direction: column;
             gap: var(--spacing-l);
@@ -134,6 +137,7 @@
         }
         .concept{
             max-width: 1000px;
+            width: 66.66666666666667%;
             display: flex;
             flex-direction: column;
             gap: var(--spacing-l);
@@ -155,6 +159,7 @@
         }
         .story{
             max-width: 1000px;
+            width: 66.66666666666667%;
             display: flex;
             flex-direction: column;
             gap: var(--spacing-l);
@@ -167,7 +172,7 @@
                 border-bottom: 1px solid var(--neutral-300);
                 li .button{
                     min-height: 40px;
-                    display: flex;
+                    display: inline-flex;
                     gap: var(--spacing-xs);
                     color: var(--primary-400);
                     padding: 8px 0;
